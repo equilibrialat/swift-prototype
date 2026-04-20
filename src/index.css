@@ -2,59 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Equilibria CRM — Dark mobile-first design system. All colors HSL. */
+/* Equilibria CRM — Light mobile-first design system. All colors HSL. */
 
 @layer base {
   :root {
-    /* Dark slate-900 base */
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    /* Light pastel mint background */
+    --background: 165 30% 96%;
+    --foreground: 170 50% 15%;
 
-    --card: 217 33% 17%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 170 50% 15%;
 
-    --popover: 217 33% 17%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 170 50% 15%;
 
-    /* Equilibria accent: emerald */
-    --primary: 160 84% 39%;
-    --primary-foreground: 222 47% 11%;
+    /* Equilibria dark turquoise/teal */
+    --primary: 175 45% 35%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 33% 22%;
-    --secondary-foreground: 210 40% 98%;
+    /* Pastel turquoise for surfaces/buttons */
+    --secondary: 170 30% 92%;
+    --secondary-foreground: 175 45% 35%;
 
-    --muted: 217 33% 20%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 170 20% 90%;
+    --muted-foreground: 170 15% 45%;
 
-    --accent: 160 84% 39%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 175 45% 35%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217 33% 25%;
-    --input: 217 33% 22%;
-    --ring: 160 84% 39%;
+    --border: 170 20% 85%;
+    --input: 170 20% 85%;
+    --ring: 175 45% 35%;
 
     --radius: 1rem;
 
     /* Stage gradients (HSL) */
-    --grad-mapeados: linear-gradient(135deg, hsl(215 20% 47%) 0%, hsl(215 25% 35%) 100%);
-    --grad-invitacion: linear-gradient(135deg, hsl(45 93% 47%) 0%, hsl(43 96% 40%) 100%);
-    --grad-demo: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(32 95% 44%) 100%);
-    --grad-propuesta: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(21 90% 48%) 100%);
-    --grad-negociacion: linear-gradient(135deg, hsl(0 84% 60%) 0%, hsl(0 74% 50%) 100%);
-    --grad-aprobado: linear-gradient(135deg, hsl(160 84% 39%) 0%, hsl(161 94% 30%) 100%);
-    --grad-aliados: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(221 83% 53%) 100%);
-    --grad-complete: linear-gradient(135deg, hsl(258 90% 66%) 0%, hsl(262 83% 58%) 100%);
+    --grad-mapeados: linear-gradient(135deg, hsl(215 20% 65%) 0%, hsl(215 25% 45%) 100%);
+    --grad-invitacion: linear-gradient(135deg, hsl(45 93% 55%) 0%, hsl(43 96% 45%) 100%);
+    --grad-demo: linear-gradient(135deg, hsl(38 92% 55%) 0%, hsl(32 95% 45%) 100%);
+    --grad-propuesta: linear-gradient(135deg, hsl(25 95% 58%) 0%, hsl(21 90% 50%) 100%);
+    --grad-negociacion: linear-gradient(135deg, hsl(0 84% 65%) 0%, hsl(0 74% 55%) 100%);
+    --grad-aprobado: linear-gradient(135deg, hsl(160 84% 45%) 0%, hsl(161 94% 35%) 100%);
+    --grad-aliados: linear-gradient(135deg, hsl(217 91% 65%) 0%, hsl(221 83% 55%) 100%);
+    --grad-complete: linear-gradient(135deg, hsl(258 90% 70%) 0%, hsl(262 83% 60%) 100%);
 
-    --sidebar-background: 222 47% 11%;
-    --sidebar-foreground: 210 40% 98%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
     --sidebar-primary: 160 84% 39%;
-    --sidebar-primary-foreground: 222 47% 11%;
-    --sidebar-accent: 217 33% 17%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217 33% 25%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96.1%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214.3 31.8% 91.4%;
     --sidebar-ring: 160 84% 39%;
   }
 }
@@ -80,10 +81,11 @@
 
 @layer components {
   .glass-panel {
-    background: hsl(217 33% 17% / 0.7);
+    background: hsl(0 0% 100% / 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid hsl(0 0% 100% / 0.1);
+    border: 1px solid hsl(214 32% 91% / 0.8);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
   }
 
   .scrollbar-hide {
